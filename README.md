@@ -1,4 +1,4 @@
-AITP 开源项目 README（中英双语版）
+AITP 开源项目 README
 
 AITP: AI Transport Protocol
 
@@ -7,7 +7,7 @@ AI 时代互联网的通用连接层标准 | Universal Connectivity Layer for th
 📋 关于项目 | 🎯 核心目标 | 🏗️ 架构概述 | 🚀 快速入门 | 🤝 贡献指南 | 📄 开源协议
 
 
-⚠️ 重要标注：本项目是 AI 时代互联网通用连接层协议（AITP）的设想
+⚠️ **重要：**本项目是 AI 时代互联网通用连接层协议（AITP）的设想
 
 1. 关于项目
 
@@ -44,7 +44,7 @@ AITP 采用轻量级四层架构，自上而下分别为：
 所有支持 AITP 的服务，需在域名根目录暴露元数据文件：https://<domain>/.well-known/aitp.json
 
 元数据示例（详细规范见 协议草案）：
-
+```json
 {
   "protocol": "AITP/1.0",
   "provider": "示例商店",
@@ -64,11 +64,12 @@ AITP 采用轻量级四层架构，自上而下分别为：
     }
   ]
 }
+```
 
 4.2 发起 AITP 请求
 
 使用 AITP 标准请求格式调用服务能力，示例：
-
+```json
 {
   "aitp": "1.0",
   "id": "req-12345",
@@ -85,6 +86,7 @@ AITP 采用轻量级四层架构，自上而下分别为：
     "sign": "a1b2c3d4e5f6"
   }
 }
+```
 
 5. 贡献指南
 
